@@ -1,0 +1,46 @@
+
+.classes {
+	margin-bottom: 90px;
+	@media screen and (max-width: $desktop) {
+	display: none;
+}
+}
+
+.classes__title {
+	text-align: center;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 1.16;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: $color-title;
+	margin-bottom: 50px;
+}
+
+.classes__image {
+	display: flex;
+}
+
+.classes__image li {
+	margin-right: 30px;
+	position: relative;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.classes-image-sabtitle {
+	position: absolute;
+	bottom: 0;
+	padding: 27px 0;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	text-align: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	width: 100%;
+	color: #FFFFFF;
+	background: rgba(47, 48, 58, 0.8);
+}

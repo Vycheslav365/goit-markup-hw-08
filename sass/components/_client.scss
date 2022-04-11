@@ -1,0 +1,63 @@
+.client {
+	padding: 60px 0;
+
+	@media screen and (min-width: $tablet) {
+		padding: 94px 0;
+	}
+}
+
+.client-title {
+	text-align: center;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.16;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: $color-title;
+	margin-bottom: 30px;
+	@media screen and(min-width:$desktop) {
+		margin-bottom: 50px;
+	}
+}
+
+.client-ul {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -15px;
+
+	& li {
+		margin: 15px;
+		padding: 15px 0 10px 0;
+		width: calc((100% - 4 * 15px) / 2);
+		height: calc((100% - 4 * 10px) / 2);
+		border: 1px solid #AFB1B8;
+		box-sizing: border-box;
+		border-radius: 4px;
+		fill: #AFB1B8;
+		transition: $transition, border 250ms linear;
+		transition-timing-function: $timing;
+    display: flex;
+		align-items: center;
+		justify-content: center;
+		
+		& svg{
+			width: 50px;
+			height:45px;
+		}
+		&:hover,
+		&:focus {
+			fill: $color-hover;
+			cursor: pointer;
+			border: 1px solid $color-hover;
+		}
+
+		@media screen and(min-width:$tablet) {
+				margin: 15px;
+				width: calc((100% - 6 * 15px) / 3);
+		}
+		@media screen and(min-width:$desktop) {
+			margin: 15px;
+			width: calc((100% - 12 * 15px) / 6);
+	}
+	}
+}
