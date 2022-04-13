@@ -21,7 +21,7 @@
 
 	@media screen and (min-width: $tablet) {
 		flex: 0;
-		margin-right: 90px;
+		margin-right: 100px;
 	}
 }
 
@@ -163,18 +163,14 @@
 			& :focus {
 				color: $color-hover;
 			}
-
 			@media screen and (min-width: $desktop) {
-				&:first-child {
-					margin-left: 90px;
-				}
+				margin-right: 50px;
 			}
-
 			&:last-child {
 				margin-right: 80px;
 
 				@media screen and (min-width: $desktop) {
-					margin-right: 247px;
+					margin-right: 305px;
 				}
 			}
 		}

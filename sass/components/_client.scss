@@ -1,7 +1,7 @@
 .client {
 	padding: 60px 0;
 
-	@media screen and (min-width: $tablet) {
+	@media screen and (min-width: $desktop) {
 		padding: 94px 0;
 	}
 }
@@ -9,14 +9,17 @@
 .client-title {
 	text-align: center;
 	font-weight: 700;
-	font-size: 36px;
-	line-height: 1.16;
+	font-size: 28px;
+	line-height: 1.17;
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: $color-title;
 	margin-bottom: 30px;
+
 	@media screen and(min-width:$desktop) {
 		margin-bottom: 50px;
+		font-size: 36px;
+		line-height: 1.16;
 	}
 }
 
@@ -36,14 +39,19 @@
 		fill: #AFB1B8;
 		transition: $transition, border 250ms linear;
 		transition-timing-function: $timing;
-    display: flex;
+		display: flex;
 		align-items: center;
 		justify-content: center;
-		
-		& svg{
-			width: 50px;
-			height:45px;
+
+		&:last-child {
+			padding: 10px 0 15px 0;
 		}
+
+		& svg {
+			width: 50px;
+			height: 56px;
+		}
+
 		&:hover,
 		&:focus {
 			fill: $color-hover;
@@ -52,12 +60,13 @@
 		}
 
 		@media screen and(min-width:$tablet) {
-				margin: 15px;
-				width: calc((100% - 6 * 15px) / 3);
+			margin: 15px;
+			width: calc((100% - 6 * 15px) / 3);
 		}
+
 		@media screen and(min-width:$desktop) {
 			margin: 15px;
 			width: calc((100% - 12 * 15px) / 6);
-	}
+		}
 	}
 }

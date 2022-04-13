@@ -7,17 +7,23 @@
 }
 
 .team__title {
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 	font-weight: bold;
-	font-size: 36px;
-	line-height: 1.16;
+	font-size: 28px;
+	line-height: 1.17;
+
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: $color-title;
+	@media screen and(min-width:$desktop) {
+		font-size: 36px;
+		line-height: 1.16;
+		margin-bottom: 50px;
+	}
 }
 
 .team-flex {
-	.team-cards{
+	.team-cards:not(:last-child){
 		margin-bottom: 30px;
 	}
 	@media screen and(min-width:$tablet) {
@@ -27,6 +33,9 @@
 		.team-cards{
 			margin: 15px;
 			width: calc((100% - 4 * 15px) / 2);
+			&:last-child{
+				margin-bottom: 30px;
+			}
 		}
 	}
 	@media screen and(min-width:$desktop) {
