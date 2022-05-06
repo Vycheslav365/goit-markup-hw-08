@@ -193,6 +193,16 @@ h6 {
   overflow-x: scroll;
   top: 0;
   right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0;
   padding: 48px 40px;
   width: 100%;
@@ -227,7 +237,7 @@ h6 {
 }
 
 .top__line-ul li:last-child {
-  margin-bottom: 25vh;
+  margin-bottom: 25px;
 }
 
 .nav__border {
@@ -266,6 +276,7 @@ h6 {
 }
 
 .top__line-info .info-email {
+  margin-bottom: 64px;
   font-size: 24px;
   line-height: 1.16;
   color: #757575;
@@ -281,6 +292,7 @@ h6 {
 .header-link {
   position: absolute;
   bottom: 48px;
+  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -303,6 +315,13 @@ h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: inherit;
+    -webkit-box-direction: inherit;
+        -ms-flex-direction: inherit;
+            flex-direction: inherit;
+    -webkit-box-pack: inherit;
+        -ms-flex-pack: inherit;
+            justify-content: inherit;
     height: 80px;
     background: none;
     padding: 0;
@@ -381,6 +400,7 @@ h6 {
     height: 18px;
   }
   .top__line-info .info-email {
+    margin-bottom: 0;
     font-size: 14px;
     line-height: 1.4;
   }

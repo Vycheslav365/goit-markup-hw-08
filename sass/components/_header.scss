@@ -38,6 +38,10 @@
 	overflow-x: scroll;
 	top: 0;
 	right: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content:space-between;
+
 	margin: 0;
 	padding: 48px 40px;
 	width: 100%;
@@ -68,7 +72,7 @@
 	}
 
 	& li:last-child {
-		margin-bottom: 25vh;
+		margin-bottom: 25px;
 	}
 }
 
@@ -101,6 +105,7 @@
 	}
 
 	.info-email {
+		margin-bottom: 64px;
 		font-size: 24px;
 		line-height: 1.16;
 		color: $gray;
@@ -117,6 +122,7 @@
 .header-link {
 	position: absolute;
 	bottom: 48px;
+	margin-top: 30px;
 	display: flex;
 	font-size: 18px;
 	line-height: 22px;
@@ -136,6 +142,8 @@
 		transform: none;
 		position: relative;
 		display: flex;
+		flex-direction: inherit;
+		justify-content:inherit;
 		height: 80px;
 		background: none;
 		padding: 0;
@@ -204,6 +212,7 @@
 		}
 
 		.info-email {
+			margin-bottom: 0;
 			font-size: 14px;
 			line-height: 1.4;
 		}
